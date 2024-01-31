@@ -1,0 +1,95 @@
+
+.Card{
+	width: 50vw;
+	height: 50vh;
+	border: 4px solid rgb(30, 30, 30);
+	display: flex;
+	font-family: 'Changa One', sans-serif;
+	background: whitesmoke;
+	border-radius: 5px;
+	color: rgb(30, 30, 30);
+	box-shadow: 0 60px 80px rgba(0,0,0,0.60), 0 45px 26px rgba(0,0,0,0.14);
+}
+
+.left{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.logo-up svg{
+	width: 70%;
+}
+
+
+.logo-down svg{
+	width: 80%;
+}
+
+.logo-up{
+	flex: 1;
+	border-bottom: 4px solid rgb(30, 30, 30);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	aspect-ratio: 1/1;
+}
+
+.logo-down{
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	aspect-ratio: 1/1;
+}
+
+.right{
+	flex: 3;
+	border-left: 4px solid rgb(30, 30, 30);
+	display: flex;
+	flex-direction: column;
+}
+
+.name{
+	flex: 3;
+	border-bottom: 4px solid rgb(30, 30, 30);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.name span{
+	width: 70%;
+	overflow-wrap: break-word;
+	font-size: 3rem;
+}
+
+.extra-info{
+	flex: 1;
+	display: flex;
+}
+
+.carnet{
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.carnet span{
+	font-size: 1.8rem;
+}
+
+
+.position{
+	flex: 1;
+	background-color: rgb(30, 30, 30);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: whitesmoke;
+}
+
+.position span{
+	font-size: 1.8rem;
+}
