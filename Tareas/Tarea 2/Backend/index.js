@@ -1,10 +1,10 @@
 const express = require("express");
-var cors = require('cors')
+var cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 9000;
 const {MongoClient} = require("mongodb");
 
-const uri = "mongodb://mongodb:27017/SO1_T2_DB";
+const uri = "mongodb://mongodb:27017/";
 const client = new MongoClient(uri);
 client.connect();
 const fotos_db = client.db("SO1_T2_DB");
