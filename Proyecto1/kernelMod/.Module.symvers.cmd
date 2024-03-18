@@ -1,0 +1,1 @@
+savedcmd_/home/dave965/Desktop/sopes/Laboratorio/proyecto/kernelMod/Module.symvers :=  scripts/mod/modpost -m -a      -o /home/dave965/Desktop/sopes/Laboratorio/proyecto/kernelMod/Module.symvers -T /home/dave965/Desktop/sopes/Laboratorio/proyecto/kernelMod/modules.order -i Module.symvers -e 

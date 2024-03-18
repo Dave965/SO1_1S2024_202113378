@@ -1,0 +1,1 @@
+savedcmd_/home/dave965/Desktop/sopes/Laboratorio/proyecto/kernelMod/p1.mod := printf '%s\n'   p1.o | awk '!x[$$0]++ { print("/home/dave965/Desktop/sopes/Laboratorio/proyecto/kernelMod/"$$0) }' > /home/dave965/Desktop/sopes/Laboratorio/proyecto/kernelMod/p1.mod

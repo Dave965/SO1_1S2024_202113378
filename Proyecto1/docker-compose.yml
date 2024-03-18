@@ -1,0 +1,59 @@
+version: '3.8'
+
+services:
+  backend:
+    image: so1_p1_backend
+    container_name: so1_p1_backend
+    privileged: true
+    pid: host
+    restart: always
+    volumes:
+      - type: bind
+        source: /proc
+        target: /proc
+    ports:
+      - "8080:8080"
+    expose:
+      - "8080"
+    depends_on:
+      - db
+    environment:
+      MYSQL_HOST: p1_so1_db
+      MYSQL_PORT: 3306
+      MYSQL_USER: root
+      MYSQL_PASSWORD: 123
+      MYSQL_DATABASE: historicos
+    networks:
+      - red_docker  
+  
+  frontend:
+    image: so1_p1_frontend
+    container_name: so1_p1_frontend
+    ports:
+      - "80:80"
+    expose:
+      - "80"
+    networks:
+      - red_docker
+
+  db:
+    image: mysql:latest
+    container_name: p1_so1_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 123
+      MYSQL_DATABASE: historicos
+    ports:
+      - "3306:3306"
+    expose:
+      - "3306"
+    networks:
+      - red_docker
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+networks:
+  red_docker:
+volumes:
+  mysql-data:
+    
